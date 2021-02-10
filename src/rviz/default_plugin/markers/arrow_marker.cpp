@@ -105,7 +105,7 @@ void ArrowMarker::onNewMessage(const MarkerConstPtr& /*old_message*/, const Mark
     }
     float shaft_length = distance - head_length;
 
-    arrow_->set(shaft_length, new_message->scale.x, head_length, new_message->scale.y);
+    arrow_->set(0.04, new_message->scale.x, 0.04, new_message->scale.y);
 
     direction.normalise();
 
